@@ -26,9 +26,6 @@ ninja.x = 125
 ninja.y = display.contentHeight - 250 -- note I am using not the center but the height of the diaplay
 ninja.ID = "ninja"
 
-local function listener( event )
-    print( "listener called" )
-end
 
 for loopCounter = 1, 50 do 
     print(loopCounter) 
