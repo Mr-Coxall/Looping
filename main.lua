@@ -21,12 +21,16 @@ backgroundImage.y = display.contentCenterY
 backgroundImage.ID = "winter background image"
 
 -- character image with width and height
-local snowman = display.newImageRect("./assets/sprites/Idle__000.png", 232, 439)
-snowman.x = 125
-snowman.y = display.contentHeight - 250 -- note I am using not the center but the height of the diaplay
-snowman.ID = "snowman"
+local ninja = display.newImageRect("./assets/sprites/Idle__000.png", 232, 439)
+ninja.x = 125
+ninja.y = display.contentHeight - 250 -- note I am using not the center but the height of the diaplay
+ninja.ID = "ninja"
 
-for loopCounter = 1, 100 do 
+local function listener( event )
+    print( "listener called" )
+end
+
+for loopCounter = 1, 50 do 
     print(loopCounter) 
-    snowman.x = snowman.x + 10
+    ninja.x = ninja.x + 10
 end
